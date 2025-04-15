@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To My Profile!</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#education">Education</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#cv">CV</a> |
+            <a href="#text-analysis">Text Analysis</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <img src="img/profile.jpeg" alt="Your Profile Picture">
+            <h2>About Me</h2>
+            <p>My name is Shaik. Babu. I am currently pursuing B.tech in CSE at IIIT Hyderabad</p>
+            <div class="local-pics">
+                <img src="img/local-pic-1.jpg" alt="Local Picture 1">
+                <img src="img/local-pic-2.jpg" alt="Local Picture 2">
+                <img src="img/local-pic-3.jpeg" alt="Local Picture 3">
+                </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <p>
+                <strong>IIIT HYDERABAD</strong> - B.Tech In CSE <br>
+                [2024-2028]
+            </p>
+            <p>
+                <strong>RGUKT NUZVID</strong> - Intermediate <br>
+                CG-9.2</br>
+                [2022-2024]
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C++, Python, JavaScript</li>
+                <li><strong>Web Development: </strong>  HTML, CSS, JavaScript (Basics)</li>
+                <li><strong>Data Structures & Algorithms: </strong> Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, Greedy Algorithms</li>
+                <li><strong>Systems Knowledge:</strong>Computer Architecture, Memory Hierarchy, Assembly Basics</li>
+                <li><strong>IoT & Embedded Systems: </strong>ESP32, Arduino IDE, Sensors & Actuators, MQTT, ThingSpeak, OM2M</li>
+                <li><strong>Software Tools:</strong>Postman, Git, VS Code</li>
+                <li><strong>Concepts:</strong> Discrete Mathematics (Logic, Sets, Graph Theory), Operating Systems Basics</li>
+                <li><strong>Version Control:</strong>Git & GitHub</li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="cv" class="section">
+        <div class="container">
+            <h2>CV</h2>
+            <a href="cv/cv.pdf" class="button">Download CV</a>
+        </div>
+    </section>
+
+    <section id="text-analysis" class="section">
+        <div class="container">
+            <h2>Text Analysis</h2>
+            <textarea id="myTextarea" rows="10" cols="80" placeholder="Enter text (10000+ words)"></textarea>
+            <button onclick="analyzeText()">Analyze</button>
+
+            <div id="results">
+                <h3>Analysis Results</h3>
+                <div id="basic-counts">
+                    <p>Letters: <span id="letterCount"></span></p>
+                    <p>Words: <span id="wordCount"></span></p>
+                    <p>Spaces: <span id="spaceCount"></span></p>
+                    <p>Newlines: <span id="newlineCount"></span></p>
+                    <p>Special Symbols: <span id="symbolCount"></span></p>
+                </div>
+
+                <div id="pronoun-counts">
+                    <h4>Pronoun Counts</h4>
+                    <table id="pronounTable">
+                        <thead>
+                            <tr>
+                                <th>Pronoun</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div id="preposition-counts">
+                    <h4>Preposition Counts</h4>
+                    <table id="prepositionTable">
+                        <thead>
+                            <tr>
+                                <th>Preposition</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div id="article-counts">
+                    <h4>Indefinite Article Counts</h4>
+                    <table id="articleTable">
+                        <thead>
+                            <tr>
+                                <th>Article</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]</p>
+    </footer>
+</body>
+
+</html>
